@@ -4,3 +4,9 @@ var app = new SteamApi.App(key);
 app.GetAppList().done(function(result){
   console.log(result);
 });
+app.GetAppList().done(function(result){
+	for (var i=0; i<result.length; i++) {
+	    console.log(result[i]);
+	}
+});
+   
